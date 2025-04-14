@@ -1,7 +1,8 @@
 <?php
 class PaymentController {
     public function showPaymentOptions() {
-        // Logic to display payment options (QRIS or Voucher)
+        // Include the payment view
+        require_once __DIR__.'/../../views/payment_view.php';
     }
 
     public function processQrisPayment() {
