@@ -4,7 +4,7 @@ require_once __DIR__.'/../app/controllers/BaseController.php';
 
 // Simple routing
 $request = $_SERVER['REQUEST_URI'];
-$basePath = '/photobox-app/public';
+$basePath = '';
 
 // Remove base path and query string
 $route = str_replace($basePath, '', parse_url($request, PHP_URL_PATH));
